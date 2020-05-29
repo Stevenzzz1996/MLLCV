@@ -1,0 +1,14 @@
+# AP and precision/recall per class
+0.00% = seal AP  
+ Precision: ['0.00', '0.00']
+ Recall   :['0.00', '1.00']
+
+
+# mAP of all classes
+mAP = 0.00%
+
+# Number of ground-truth objects per class
+seal: 265
+
+# Number of predicted objects per class
+seal: 1 (tp:0, fp:0)
