@@ -1,0 +1,125 @@
+D:/chrome_download/new_data/0.jpg 131,257,241,407,1,1
+D:/chrome_download/new_data/1.jpg 113,163,196,221,1,1
+D:/chrome_download/new_data/2.jpg 368,92,408,155,1,1
+D:/chrome_download/new_data/3.jpg 142,249,201,312,1,1 269,250,326,310,1,1
+D:/chrome_download/new_data/4.jpg 105,296,158,375,1,1 296,272,349,351,1,1
+D:/chrome_download/new_data/5.jpg 282,309,368,372,1,1
+D:/chrome_download/new_data/6.jpg 106,242,166,325,1,1
+D:/chrome_download/new_data/7.jpg 124,147,199,202,1,1 273,163,309,190,1,1
+D:/chrome_download/new_data/8.jpg 249,133,301,205,1,1 264,209,289,246,1,1 219,245,267,330,1,1
+D:/chrome_download/new_data/9.jpg 182,356,291,415,1,1
+D:/chrome_download/new_data/10.jpg 18,146,76,250,1,1 277,223,333,325,1,1 358,284,381,302,1,1
+D:/chrome_download/new_data/11.jpg 70,98,144,203,1,1 207,132,283,231,1,1 270,64,350,171,1,1 290,215,370,327,1,1 76,243,151,351,1,1 279,314,300,343,1,1
+D:/chrome_download/new_data/12.jpg 178,238,255,300,1,1 262,279,336,334,1,1
+D:/chrome_download/new_data/13.jpg 216,42,407,403,1,1 18,45,208,403,1,1
+D:/chrome_download/new_data/14.jpg 273,109,313,171,1,1 252,169,293,229,1,1 296,200,314,226,1,1
+D:/chrome_download/new_data/15.jpg 246,144,294,198,1,1
+D:/chrome_download/new_data/16.jpg 276,98,360,158,1,1
+D:/chrome_download/new_data/17.jpg 152,46,273,136,1,1
+D:/chrome_download/new_data/18.jpg 78,154,156,183,1,1 103,209,180,253,1,1
+D:/chrome_download/new_data/19.jpg 220,261,304,322,1,1
+D:/chrome_download/new_data/20.jpg 139,83,176,137,1,1 116,220,158,286,1,1 290,245,313,279,1,1 279,293,324,360,1,1
+D:/chrome_download/new_data/21.jpg 242,237,284,344,1,1
+D:/chrome_download/new_data/22.jpg 362,163,415,223,1,1
+D:/chrome_download/new_data/23.jpg 208,74,296,216,1,1 184,269,316,385,1,1
+D:/chrome_download/new_data/24.jpg 262,316,340,373,1,1
+D:/chrome_download/new_data/25.jpg 54,101,142,238,1,1 161,101,250,239,1,1 270,101,357,239,1,1 217,259,303,396,1,1 110,258,196,396,1,1
+D:/chrome_download/new_data/26.jpg 275,300,352,357,1,1
+D:/chrome_download/new_data/27.jpg 60,54,361,357,1,1
+D:/chrome_download/new_data/28.jpg 167,223,214,314,1,1 266,217,315,307,1,1
+D:/chrome_download/new_data/29.jpg 252,195,293,257,1,1 251,247,273,273,1,1 316,239,336,267,1,1
+D:/chrome_download/new_data/30.jpg 37,48,79,106,1,1 251,130,292,187,1,1 332,107,390,187,1,1
+D:/chrome_download/new_data/31.jpg 120,185,201,315,1,1
+D:/chrome_download/new_data/32.jpg 259,126,304,193,1,1 307,163,326,188,1,1 273,24,316,86,1,1
+D:/chrome_download/new_data/33.jpg 142,330,190,398,1,1
+D:/chrome_download/new_data/34.jpg 108,33,195,60,1,1 114,281,184,383,1,1
+D:/chrome_download/new_data/35.jpg 41,211,122,272,1,1 145,264,188,294,1,1 240,218,323,276,1,1 261,314,329,366,1,1
+D:/chrome_download/new_data/36.jpg 265,190,311,250,1,1 296,187,341,245,1,1
+D:/chrome_download/new_data/37.jpg 265,189,312,249,1,1 295,185,340,247,1,1
+D:/chrome_download/new_data/38.jpg 28,60,133,322,1,1 281,59,378,314,1,1
+D:/chrome_download/new_data/39.jpg 307,324,407,405,1,1
+D:/chrome_download/new_data/40.jpg 283,218,414,371,1,1
+D:/chrome_download/new_data/41.jpg 163,223,245,279,1,1
+D:/chrome_download/new_data/42.jpg 279,186,340,285,1,1
+D:/chrome_download/new_data/43.jpg 260,339,341,397,1,1
+D:/chrome_download/new_data/44.jpg 18,60,100,121,1,1 137,60,215,121,1,1 231,58,311,117,1,1 315,52,396,112,1,1 361,99,415,158,1,1
+D:/chrome_download/new_data/45.jpg 226,325,322,403,1,1
+D:/chrome_download/new_data/46.jpg 41,2,292,98,1,1 184,169,355,257,1,1 205,285,366,363,1,1
+D:/chrome_download/new_data/47.jpg 213,274,298,335,1,1
+D:/chrome_download/new_data/48.jpg 144,37,225,95,1,1 272,51,355,115,1,1 260,214,299,245,1,1 134,190,212,247,1,1
+D:/chrome_download/new_data/49.jpg 85,87,330,330,1,1
+D:/chrome_download/new_data/50.jpg 30,60,76,121,1,1 342,155,387,221,1,1
+D:/chrome_download/new_data/51.jpg 77,149,166,348,1,1 239,149,334,354,1,1
+D:/chrome_download/new_data/52.jpg 52,123,161,333,1,1 249,119,363,342,1,1
+D:/chrome_download/new_data/53.jpg 78,88,157,144,1,1 250,78,331,133,1,1
+D:/chrome_download/new_data/54.jpg 10,0,117,69,1,1 143,0,255,74,1,1 283,0,394,71,1,1 283,111,398,261,1,1 144,135,260,237,1,1 9,115,119,260,1,1 286,324,408,412,1,1 149,317,268,415,1,1 9,314,133,414,1,1
+D:/chrome_download/new_data/55.jpg 36,254,93,333,1,1 174,257,229,328,1,1
+D:/chrome_download/new_data/56.jpg 93,242,151,322,1,1
+D:/chrome_download/new_data/57.jpg 44,45,199,332,1,1 251,103,375,253,1,1
+D:/chrome_download/new_data/58.jpg 97,287,178,345,1,1
+D:/chrome_download/new_data/59.jpg 91,254,177,318,1,1 261,248,346,313,1,1
+D:/chrome_download/new_data/60.jpg 46,321,141,397,1,1 246,339,343,414,1,1
+D:/chrome_download/new_data/61.jpg 133,250,182,338,1,1
+D:/chrome_download/new_data/62.jpg 134,115,276,298,1,1
+D:/chrome_download/new_data/63.jpg 59,125,141,185,1,1 157,284,212,326,1,1
+D:/chrome_download/new_data/64.jpg 29,42,381,392,1,1
+D:/chrome_download/new_data/65.jpg 214,95,283,149,1,1
+D:/chrome_download/new_data/66.jpg 211,337,286,396,1,1
+D:/chrome_download/new_data/67.jpg 279,248,358,307,1,1
+D:/chrome_download/new_data/68.jpg 25,15,103,129,1,1 127,18,207,130,1,1 27,150,104,262,1,1 127,148,203,257,1,1 227,134,303,248,1,1 332,138,406,245,1,1 328,278,406,385,1,1 224,279,301,391,1,1 130,289,207,397,1,1 25,282,104,395,1,1
+D:/chrome_download/new_data/69.jpg 86,276,166,336,1,1 185,332,264,391,1,1
+D:/chrome_download/new_data/70.jpg 276,223,360,287,1,1
+D:/chrome_download/new_data/71.jpg 254,308,312,388,1,1
+D:/chrome_download/new_data/72.jpg 254,283,340,344,1,1
+D:/chrome_download/new_data/73.jpg 252,167,370,333,1,1 51,215,167,381,1,1
+D:/chrome_download/new_data/74.jpg 255,243,337,303,1,1 64,254,136,305,1,1
+D:/chrome_download/new_data/75.jpg 284,278,373,400,1,1
+D:/chrome_download/new_data/76.jpg 198,174,252,235,1,1 196,237,252,295,1,1 293,272,377,369,1,1
+D:/chrome_download/new_data/77.jpg 35,79,134,178,1,1 160,80,256,178,1,1 35,203,134,302,1,1 162,203,257,297,1,1 95,300,194,402,1,1 240,298,342,401,1,1
+D:/chrome_download/new_data/78.jpg 12,9,197,202,1,1 219,9,399,196,1,1 226,222,408,412,1,1 16,220,196,408,1,1
+D:/chrome_download/new_data/79.jpg 159,249,219,344,1,1
+D:/chrome_download/new_data/80.jpg 267,195,345,314,1,1
+D:/chrome_download/new_data/81.jpg 108,96,161,142,1,1 71,190,173,274,1,1
+D:/chrome_download/new_data/82.jpg 254,174,322,273,1,1
+D:/chrome_download/new_data/83.jpg 53,325,138,388,1,1 253,327,340,392,1,1
+D:/chrome_download/new_data/84.jpg 262,180,345,237,1,1
+D:/chrome_download/new_data/85.jpg 102,272,178,332,1,1 160,330,242,393,1,1
+D:/chrome_download/new_data/86.jpg 17,209,144,396,1,1
+D:/chrome_download/new_data/87.jpg 265,280,318,317,1,1
+D:/chrome_download/new_data/88.jpg 43,260,135,323,1,1 140,260,244,331,1,1 211,300,321,369,1,1 258,266,371,338,1,1
+D:/chrome_download/new_data/89.jpg 253,317,342,379,1,1 327,34,380,72,1,1
+D:/chrome_download/new_data/90.jpg 177,249,256,314,1,1
+D:/chrome_download/new_data/91.jpg 116,283,183,383,1,1
+D:/chrome_download/new_data/92.jpg 89,313,175,379,1,1 274,308,365,375,1,1
+D:/chrome_download/new_data/93.jpg 111,215,192,271,1,1 208,250,290,315,1,1
+D:/chrome_download/new_data/94.jpg 0,0,414,415,1,1
+D:/chrome_download/new_data/95.jpg 175,120,258,179,1,1 225,203,308,260,1,1
+D:/chrome_download/new_data/96.jpg 27,60,76,121,1,1 341,157,387,222,1,1
+D:/chrome_download/new_data/97.jpg 32,42,113,219,1,1 124,48,203,219,1,1 213,47,292,219,1,1 306,48,384,218,1,1 33,240,113,372,1,1 124,242,204,373,1,1 213,245,292,375,1,1 305,246,385,374,1,1
+D:/chrome_download/new_data/98.jpg 95,294,150,392,1,1 184,295,243,402,1,1
+D:/chrome_download/new_data/99.jpg 95,300,174,359,1,1
+D:/chrome_download/new_data/100.jpg 241,74,283,136,1,1
+D:/chrome_download/new_data/101.jpg 299,254,365,344,1,1
+D:/chrome_download/new_data/102.jpg 276,296,325,363,1,1
+D:/chrome_download/new_data/103.jpg 292,298,328,354,1,1
+D:/chrome_download/new_data/104.jpg 67,65,163,136,1,1 179,65,273,135,1,1 278,93,310,121,1,1 326,105,358,134,1,1 13,158,106,290,1,1 122,157,214,290,1,1 220,156,313,290,1,1 319,158,412,292,1,1 308,291,339,320,1,1 265,318,298,347,1,1 220,299,248,339,1,1 165,298,194,339,1,1 198,357,230,384,1,1 93,304,138,339,1,1
+D:/chrome_download/new_data/105.jpg 272,12,327,113,1,1 292,227,343,361,1,1
+D:/chrome_download/new_data/106.jpg 73,342,164,410,1,1
+D:/chrome_download/new_data/107.jpg 293,305,369,361,1,1
+D:/chrome_download/new_data/108.jpg 145,265,188,319,1,1 312,257,357,314,1,1 361,280,384,308,1,1
+D:/chrome_download/new_data/109.jpg 73,297,143,397,1,1 268,82,328,144,1,1 264,182,328,247,1,1 358,182,415,243,1,1
+D:/chrome_download/new_data/110.jpg 86,24,164,80,1,1
+D:/chrome_download/new_data/111.jpg 146,100,213,193,1,1 260,92,319,151,1,1
+D:/chrome_download/new_data/112.jpg 78,87,157,143,1,1 252,77,331,133,1,1
+D:/chrome_download/new_data/113.jpg 166,286,235,341,1,1 254,309,326,364,1,1
+D:/chrome_download/new_data/114.jpg 178,155,252,210,1,1 270,178,350,239,1,1 77,46,153,106,1,1 39,133,123,202,1,1
+D:/chrome_download/new_data/115.jpg 84,62,170,202,1,1 293,74,371,206,1,1 88,263,171,365,1,1 294,247,376,394,1,1
+D:/chrome_download/new_data/116.jpg 188,83,236,122,1,1 279,282,339,345,1,1
+D:/chrome_download/new_data/117.jpg 155,170,239,293,1,1
+D:/chrome_download/new_data/118.jpg 55,235,127,288,1,1 246,244,327,300,1,1
+D:/chrome_download/new_data/119.jpg 39,329,124,389,1,1
+D:/chrome_download/new_data/120.jpg 91,266,170,324,1,1 217,260,303,321,1,1
+D:/chrome_download/new_data/121.jpg 74,27,347,317,1,1
+D:/chrome_download/new_data/122.jpg 171,169,237,315,1,1 243,154,321,325,1,1 326,149,415,345,1,1
+D:/chrome_download/new_data/123.jpg 105,222,158,321,1,1
+D:/chrome_download/new_data/124.jpg 87,277,168,336,1,1 265,274,346,333,1,1
