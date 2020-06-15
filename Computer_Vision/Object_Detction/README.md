@@ -1,10 +1,10 @@
-#                            ![](C:\Users\24991\Desktop\3e971993f41dcaa6f21c5a286f3af6a1.jpg)              ---------------------Object Detection---------------------
+#              [![NCGkM8.jpg](https://s1.ax1x.com/2020/06/15/NCGkM8.jpg)](https://imgchr.com/i/NCGkM8)              ---------------------Object Detection---------------------
 
 作者:孟令龙                                                                                                                                             实习导师：李科健
 
 ---
-
 ## 									                                     One-stage算法分析
+
 ## 原理分析
 
 ***
@@ -18,8 +18,7 @@
 * Loss设计
 
 * NMS/K-Means/IOU
-
-* <img src="C:\Users\24991\Desktop\v3.jpg" style="zoom:80%;" />
+[![NCGixf.jpg](https://s1.ax1x.com/2020/06/15/NCGixf.jpg)
 ***
 
 #### 骨干网络 **backbone**
@@ -35,8 +34,8 @@
 3.梯度消失爆炸
 
 [resnet](https://zhuanlan.zhihu.com/p/42706477)
+* [![NCGAsS.jpg](https://s1.ax1x.com/2020/06/15/NCGAsS.jpg)](https://imgchr.com/i/NCGAsS)
 
-![](C:\Users\24991\Desktop\resnet.jpg)
 
 ### **Head**（大中小三种尺度预测解决了什么问题，结合常用的attention机制如何进行感受野模块的设计？）
 
