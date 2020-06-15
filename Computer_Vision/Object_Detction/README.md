@@ -1,4 +1,4 @@
-#              [![NCGkM8.jpg](https://s1.ax1x.com/2020/06/15/NCGkM8.jpg)](https://imgchr.com/i/NCGkM8)              ---------------------Object Detection---------------------
+#               ![](./1.jpg)           ---------------------Object Detection---------------------
 
 作者:孟令龙                                                                                                                                             实习导师：李科健
 
@@ -18,7 +18,7 @@
 * Loss设计
 
 * NMS/K-Means/IOU
-[![NCGixf.jpg](https://s1.ax1x.com/2020/06/15/NCGixf.jpg)
+![](./v3.jpg)
 ***
 
 #### 骨干网络 **backbone**
@@ -34,7 +34,8 @@
 3.梯度消失爆炸
 
 [resnet](https://zhuanlan.zhihu.com/p/42706477)
-* [![NCGAsS.jpg](https://s1.ax1x.com/2020/06/15/NCGAsS.jpg)](https://imgchr.com/i/NCGAsS)
+
+* ![](./resnet.jpg)
 
 
 ### **Head**（大中小三种尺度预测解决了什么问题，结合常用的attention机制如何进行感受野模块的设计？）
