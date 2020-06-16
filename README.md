@@ -15,7 +15,8 @@
 特别感谢：我的师弟伟业和映谦大佬YOLOV3-keras的工作！！！
 
 最近学习计划：
-```mermaid
+<script src="mermaid.full.min.js"></script>
+<div class="mermaid">
 graph TD
 A[1.搞懂目标检测代码] -->B0(2.YOLOV3/V4)
 A[1.搞懂目标检测代码] -->B1(2.Centernet)
@@ -24,9 +25,9 @@ A[1.搞懂目标检测代码] -->B2(3.其他最新论文)
     B1 --> C0[4.模型部署流程onnx->onnx runtime/tensorRT/OpenVINO]
     B2 --> C0[4.模型部署流程onnx->onnx runtime/tensorRT/OpenVINO]
     C0 --> D[5.mysql/flask/ffmpeg]
-    D1[每日日常学习数据结构]
-  
-```
+    D1[每日日常学习数据结构] 
+<div>
+
 
 
 
