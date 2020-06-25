@@ -22,6 +22,7 @@ emotion_model.load_weights('C:/Users/24991/Desktop/emotion/emotion/emotion/emoti
 
 def puttext(src,res): #res[第几个人][人脸数据][xmin,ymin,xmax,ymax,classfication]
     nums = len(res)
+
     for i in range(nums):
         print(res[0][0])
 
@@ -29,7 +30,7 @@ def puttext(src,res): #res[第几个人][人脸数据][xmin,ymin,xmax,ymax,class
         # print(tf.argmax(emotion_situation))
         #写入关键信息
         src = cv2.rectangle(src,(int(res[i][0][0]),int(res[i][0][1])),(int(res[i][0][2]),int(res[i][0][3])),(i*10,i*20,i*15),thickness=1)
-        src = cv2.putText(src,'person: '+str(res[i][0][4]),(int(res[i][0][0]),int(res[i][0][1])),cv2.FONT_HERSHEY_SIMPLEX,1.2,(0,123,125),2)
+        src = cv2.putText(src,'person: '+str(res[i][0][4]),(int(res[i][0][0]),int(res[i][0][1])),cv2.FONT_HERSHEY_SIMPLEX,1.2,(i*10,i*20,i*15),2)
         #person-> arcface
         # classfication
     return src
@@ -74,7 +75,7 @@ def face_align(im,res,tsize=128, desiredLeftEye=0.35):
         output = cv2.warpAffine(im, M, (w, h), flags=cv2.INTER_CUBIC)
         crop.append(output)
     return crop
-def_face_regonition()
+#  def_face_regonition()
 #开启摄像头人脸检测
 cap = cv2.VideoCapture(0)
 while 1:
