@@ -24,7 +24,7 @@ def puttext(src,res): #res[第几个人][人脸数据][xmin,ymin,xmax,ymax,class
     nums = len(res)
 
     for i in range(nums):
-        print(res[0][0])
+        #print(res[0][0])
 
         # emotion_situation = emotion_test(src,int(res[i][0][0]),int(res[i][0][1]),int(res[i][0][2]),int(res[i][0][3]))
         # print(tf.argmax(emotion_situation))
@@ -82,10 +82,13 @@ while 1:
     ret,frame = cap.read() #读取视频
     frame = cv2.flip(frame,1)
     res = detect(frame)
-    print('res',res,len(res))
+    # print('res',res,len(res))
     if len(res)>0:
 
         frame = puttext(frame,res)
+        crop_image = face_align(frame,res)
+        crop_image = np.array(crop_image)
+        print(crop_image.shape)
 
     else:
         frame = frame

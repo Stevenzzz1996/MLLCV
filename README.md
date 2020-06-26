@@ -1,4 +1,4 @@
-# <FONT SIZE =10 color = blue>M</FONT><FONT SIZE =10 color = green>L</FONT><FONT SIZE =10 color = red>L</FONT>
+# 强大自我，是解决问题唯一方法
 <img src="./timg.jpg" alt="timg" style="zoom:150%;" />
 
 <FONT SIZE = 5>这个仓库是我的主要仓库，主要写一些计算机视觉基础的东西。</FONT>
