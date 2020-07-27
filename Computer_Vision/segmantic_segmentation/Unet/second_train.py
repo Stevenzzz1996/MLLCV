@@ -128,22 +128,5 @@ def main():
                 plt.savefig('C:/stone_segmataion/train_output_flow/'+str(epoch)+str(step/500)+'.png')
         if epoch % 2 == 0:
             tf.saved_model.save(model, 'model')
-
-        # '''test and save model for segmatation'''
-        # total_num = 0
-        # total_correct = 0
-        # for x,y in test_db:
-        #     print("the model test is computing...........")
-        #     logits = model(x)
-        #     pred = tf.argmax(logits, axis=2)
-        #     pred = tf.cast(pred, dtype=tf.int32)
-        #
-        #     correct = tf.cast(tf.equal(pred, y), dtype=tf.int32)
-        #     correct = tf.reduce_sum(correct)
-        #
-        #     total_num += x.shape[0]
-        #     total_correct += int(correct)
-        #
-        # acc = total_correct / total_num
 if __name__ == '__main__':
     main()

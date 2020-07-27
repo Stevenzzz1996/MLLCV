@@ -24,13 +24,15 @@ def puttext(src,res): #res[第几个人][人脸数据][xmin,ymin,xmax,ymax,class
     nums = len(res)
 
     for i in range(nums):
-        #print(res[0][0])
+        print(res[0][0],res[0][1])
 
         # emotion_situation = emotion_test(src,int(res[i][0][0]),int(res[i][0][1]),int(res[i][0][2]),int(res[i][0][3]))
         # print(tf.argmax(emotion_situation))
         #写入关键信息
-        src = cv2.rectangle(src,(int(res[i][0][0]),int(res[i][0][1])),(int(res[i][0][2]),int(res[i][0][3])),(i*10,i*20,i*15),thickness=1)
-        src = cv2.putText(src,'person: '+str(res[i][0][4]),(int(res[i][0][0]),int(res[i][0][1])),cv2.FONT_HERSHEY_SIMPLEX,1.2,(i*10,i*20,i*15),2)
+        src = cv2.rectangle(src,(int(res[i][0][0]),int(res[i][0][1])),(int(res[i][0][2]),int(res[i][0][3])),((i+3)*10,(i+3)*20,(i+3)*15),thickness=2)
+        src = cv2.putText(src,'face: '+str(res[i][0][4]),(int(res[i][0][0]),int(res[i][0][1])),cv2.FONT_HERSHEY_SIMPLEX,1,((i+5)*10,(i+5)*20,(i+5)*15),2)
+        for t in range(1,10,2):
+            src = cv2.circle(src,(int(res[i][1][t-1]),int(res[i][1][t])),2,(100,200,22),2)
         #person-> arcface
         # classfication
     return src
@@ -75,6 +77,7 @@ def face_align(im,res,tsize=128, desiredLeftEye=0.35):
         output = cv2.warpAffine(im, M, (w, h), flags=cv2.INTER_CUBIC)
         crop.append(output)
     return crop
+
 #  def_face_regonition()
 #开启摄像头人脸检测
 cap = cv2.VideoCapture(0)
@@ -86,14 +89,17 @@ while 1:
     if len(res)>0:
 
         frame = puttext(frame,res)
-        crop_image = face_align(frame,res)
-        crop_image = np.array(crop_image)
-        print(crop_image.shape)
+        # crop_image = face_align(frame,res)
+        # crop_image = np.array(crop_image)
+        #print(crop_image.shape)
+        #cv2.imshow('face',crop_image[0])
+        cv2.imshow('face:',frame)
+
 
     else:
         frame = frame
-    cv2.imshow('video',frame)
-    if cv2.waitKey(100) & 0xff == ord('q'):
+    #cv2.imshow('video',frame)
+    if cv2.waitKey(1) & 0xff == ord('q'):
         break
 cap.release()
 cv2.destroyAllWindows()

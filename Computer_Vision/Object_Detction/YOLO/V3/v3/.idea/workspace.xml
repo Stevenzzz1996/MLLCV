@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22ab3625-14a4-43be-9df0-de6cfbe03b84" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cRSbC1e8ekBIax9T3idjq7gD87" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.crawl">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOV3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="crawl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOV3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="image_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOV3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\conda\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="video_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOV3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\conda\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="video_demo2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOV3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video_demo2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.crawl" />
+        <item itemvalue="Python.video_demo2" />
+        <item itemvalue="Python.video_demo" />
+        <item itemvalue="Python.image_demo" />
+        <item itemvalue="Python.__init__" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22ab3625-14a4-43be-9df0-de6cfbe03b84" name="Default Changelist" comment="" />
+      <created>1590489981139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590489981139</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="268" y="59" key="#Inspections" timestamp="1594003844987">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="268" y="59" key="#Inspections/0.0.1280.760@0.0.1280.760" timestamp="1594003844987" />
+    <state x="341" y="0" key="#LLmodel" timestamp="1594000718693">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="341" y="0" key="#LLmodel/0.0.1280.760@0.0.1280.760" timestamp="1594000718693" />
+    <state x="561" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594264218192">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="561" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594264218192" />
+    <state x="3401" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593573751200" />
+    <state x="3117" y="174" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593507463713">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3117" y="174" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593507463713" />
+    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.760@0.0.1280.760" timestamp="1593184996461" />
+    <state x="3053" y="10" key="#image_demo" timestamp="1593687984281">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3053" y="10" key="#image_demo/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593687984281" />
+    <state x="3066" y="32" key="#only_person" timestamp="1593768650118">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3066" y="32" key="#only_person/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593768650118" />
+    <state x="341" y="0" key="#video_demo" timestamp="1593999882536">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="341" y="0" key="#video_demo/0.0.1280.760@0.0.1280.760" timestamp="1593999882536" />
+    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1593184952990">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1593184952990" />
+    <state width="1260" height="230" key="GridCell.Tab.0.bottom" timestamp="1594275268261">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="230" key="GridCell.Tab.0.bottom/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594264163247" />
+    <state width="1238" height="119" key="GridCell.Tab.0.bottom/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593769018894" />
+    <state width="1260" height="230" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1594275268261" />
+    <state width="1260" height="230" key="GridCell.Tab.0.center" timestamp="1594275268261">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="230" key="GridCell.Tab.0.center/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594264163247" />
+    <state width="1238" height="119" key="GridCell.Tab.0.center/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593769018894" />
+    <state width="1260" height="230" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1594275268261" />
+    <state width="1260" height="230" key="GridCell.Tab.0.left" timestamp="1594275268261">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="230" key="GridCell.Tab.0.left/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594264163247" />
+    <state width="1238" height="119" key="GridCell.Tab.0.left/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593769018893" />
+    <state width="1260" height="230" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1594275268261" />
+    <state width="1260" height="230" key="GridCell.Tab.0.right" timestamp="1594275268261">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1260" height="230" key="GridCell.Tab.0.right/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594264163247" />
+    <state width="1238" height="119" key="GridCell.Tab.0.right/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593769018894" />
+    <state width="1260" height="230" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1594275268261" />
+    <state width="1567" height="230" key="GridCell.Tab.1.bottom" timestamp="1593662648891">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1567" height="230" key="GridCell.Tab.1.bottom/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593662648891" />
+    <state width="1567" height="230" key="GridCell.Tab.1.center" timestamp="1593662648890">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1567" height="230" key="GridCell.Tab.1.center/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593662648890" />
+    <state width="1567" height="230" key="GridCell.Tab.1.left" timestamp="1593662648889">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1567" height="230" key="GridCell.Tab.1.left/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593662648889" />
+    <state width="1567" height="230" key="GridCell.Tab.1.right" timestamp="1593662648890">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1567" height="230" key="GridCell.Tab.1.right/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1593662648890" />
+    <state x="143" y="25" key="SettingsEditor" timestamp="1594003863532">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="143" y="25" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1594003863532" />
+  </component>
+</project>
