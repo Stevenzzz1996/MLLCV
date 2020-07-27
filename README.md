@@ -1,7 +1,8 @@
-# 强大自我，是解决问题唯一方法
+# 时光留给我们和平和期待
+
 <img src="./timg.jpg" alt="timg" style="zoom:150%;" />
 
-<FONT SIZE = 5 color = grenn>这个仓库是我的主要仓库，主要写一些计算机视觉基础的东西。</FONT>
+<FONT SIZE = 5 color = grenn>这个仓库是我的主要仓库，主要写一些计算机视觉的东西。</FONT>
 
 特别感谢：我的师弟伟业和映谦大佬YOLOV3-keras的工作！
 
