@@ -13,13 +13,6 @@ import tensorflow as tf
 连接ffmpeg
 连接mysql
 '''
-
-#情绪识别网络结构定义
-emotion_model = mini_XCEPTION(input_shape=(64,64,1),num_classes=7)
-emotion_model.summary()
-emotion_model.load_weights('C:/Users/24991/Desktop/emotion/emotion/emotion/emotion.hdf5')
-
-
 def puttext(src,res): #res[第几个人][人脸数据][xmin,ymin,xmax,ymax,classfication]
     nums = len(res)
 
@@ -36,17 +29,6 @@ def puttext(src,res): #res[第几个人][人脸数据][xmin,ymin,xmax,ymax,class
         #person-> arcface
         # classfication
     return src
-def emotion_test(src,xmin,ymin,xmax,ymax):
-    #crop face image
-    src_gary = cv2.cvtColor(src,cv2.COLOR_BGR2GRAY)
-    src_gary = src_gary/255. -0.5
-    crop_face = src_gary[ymin:ymax,xmin:xmax]
-    crop_face = cv2.resize(crop_face,(64,64))
-    data_model_size = crop_face[np.newaxis,:,:,np.newaxis]
-    print(data_model_size.shape)
-    data_model_size = tf.cast(data_model_size,dtype=tf.float32)
-    emotion_situation = emotion_model(data_model_size)
-    return emotion_situation
 
 def face_align(im,res,tsize=128, desiredLeftEye=0.35):
     crop = []
@@ -78,7 +60,6 @@ def face_align(im,res,tsize=128, desiredLeftEye=0.35):
         crop.append(output)
     return crop
 
-#  def_face_regonition()
 #开启摄像头人脸检测
 cap = cv2.VideoCapture(0)
 while 1:
@@ -93,12 +74,12 @@ while 1:
         # crop_image = np.array(crop_image)
         #print(crop_image.shape)
         #cv2.imshow('face',crop_image[0])
-        cv2.imshow('face:',frame)
+        # cv2.imshow('face:',frame)
 
 
     else:
         frame = frame
-    #cv2.imshow('video',frame)
+    cv2.imshow('video',frame)
     if cv2.waitKey(1) & 0xff == ord('q'):
         break
 cap.release()

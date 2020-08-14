@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a39ff56e-9014-4a19-a73c-fd0d5acfc2db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface/align_face_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface/id_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/.idea/face_ID.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Computer_Vision/face_ID/centernet+arcface/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paper/research.md" beforeDir="false" afterPath="$PROJECT_DIR$/paper/research.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1g53aNFJ1Jg7SBz08x8Q5e39Uvi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a39ff56e-9014-4a19-a73c-fd0d5acfc2db" name="Default Changelist" comment="" />
+      <created>1597390688754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597390688754</updated>
+    </task>
+    <servers />
+  </component>
+</project>

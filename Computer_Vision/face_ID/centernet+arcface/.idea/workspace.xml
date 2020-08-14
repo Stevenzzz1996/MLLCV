@@ -20,9 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c73b25ff-8949-49c2-a9d7-69393d208b44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/align_face_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/face_ID.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../centernet+arcface.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../paper/research.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../paper/research.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +68,28 @@
       <recent name="C:\Users\24991\PycharmProjects\webserver" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.id_test">
+    <configuration name="align_face_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="webserver" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/align_face_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="webserver" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="centerface" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="id_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="webserver" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,7 +123,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/centerface.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/id_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,16 +198,18 @@
     <list>
       <item itemvalue="Python.webserver" />
       <item itemvalue="Python.useMySQL" />
-      <item itemvalue="Python.centerface" />
       <item itemvalue="Python.api" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.align_face_test" />
+      <item itemvalue="Python.id_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.id_test" />
+        <item itemvalue="Python.align_face_test" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.useMySQL" />
         <item itemvalue="Python.api" />
-        <item itemvalue="Python.centerface" />
       </list>
     </recent_temporary>
   </component>
@@ -201,6 +236,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591759936661">
@@ -215,30 +251,34 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="422" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1591759934859" />
-    <state width="1260" height="241" key="GridCell.Tab.0.bottom" timestamp="1594627056832">
+    <state width="1260" height="257" key="GridCell.Tab.0.bottom" timestamp="1597386286079">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
+    <state width="1260" height="257" key="GridCell.Tab.0.bottom/0.0.1280.760/2560.0.1097.577@0.0.1280.760" timestamp="1597386286079" />
     <state width="1260" height="241" key="GridCell.Tab.0.bottom/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594627056832" />
     <state width="1899" height="435" key="GridCell.Tab.0.bottom/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1591870976123" />
-    <state width="1260" height="82" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1592062697887" />
-    <state width="1260" height="241" key="GridCell.Tab.0.center" timestamp="1594627056831">
+    <state width="1260" height="257" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1597385707123" />
+    <state width="1260" height="257" key="GridCell.Tab.0.center" timestamp="1597386286078">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
+    <state width="1260" height="257" key="GridCell.Tab.0.center/0.0.1280.760/2560.0.1097.577@0.0.1280.760" timestamp="1597386286078" />
     <state width="1260" height="241" key="GridCell.Tab.0.center/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594627056831" />
     <state width="1899" height="435" key="GridCell.Tab.0.center/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1591870976122" />
-    <state width="1260" height="82" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1592062697886" />
-    <state width="1260" height="241" key="GridCell.Tab.0.left" timestamp="1594627056831">
+    <state width="1260" height="257" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1597385707122" />
+    <state width="1260" height="257" key="GridCell.Tab.0.left" timestamp="1597386286078">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
+    <state width="1260" height="257" key="GridCell.Tab.0.left/0.0.1280.760/2560.0.1097.577@0.0.1280.760" timestamp="1597386286078" />
     <state width="1260" height="241" key="GridCell.Tab.0.left/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594627056831" />
     <state width="1899" height="435" key="GridCell.Tab.0.left/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1591870976122" />
-    <state width="1260" height="82" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1592062697885" />
-    <state width="1260" height="241" key="GridCell.Tab.0.right" timestamp="1594627056832">
+    <state width="1260" height="257" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1597385707122" />
+    <state width="1260" height="257" key="GridCell.Tab.0.right" timestamp="1597386286078">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
+    <state width="1260" height="257" key="GridCell.Tab.0.right/0.0.1280.760/2560.0.1097.577@0.0.1280.760" timestamp="1597386286078" />
     <state width="1260" height="241" key="GridCell.Tab.0.right/0.0.1280.760/2560.0.1920.1040@0.0.1280.760" timestamp="1594627056832" />
     <state width="1899" height="435" key="GridCell.Tab.0.right/0.0.1280.760/2560.0.1920.1040@2560.0.1920.1040" timestamp="1591870976123" />
-    <state width="1260" height="82" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1592062697886" />
+    <state width="1260" height="257" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1597385707123" />
     <state x="3083" y="256" width="672" height="678" key="search.everywhere.popup" timestamp="1591779307484">
       <screen x="2560" y="0" width="1920" height="1040" />
     </state>

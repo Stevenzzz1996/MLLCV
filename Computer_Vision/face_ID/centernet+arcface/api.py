@@ -17,7 +17,7 @@ def ensure_cv(im):
 def detect(im):
     global net
     im = ensure_cv(im)
-    h, w = im.shape[:2]
+    h, w = im.shape[0:2]
     dets, lms = net(im, h, w, threshold=0.35)
     res = []
     for (det, lm) in zip(dets, lms):
