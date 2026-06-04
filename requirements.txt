@@ -1,0 +1,9 @@
+numpy
+opencv-python
+matplotlib
+pillow
+scikit-image
+
+# Optional legacy ML dependencies:
+# tensorflow
+# keras

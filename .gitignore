@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+*.key
+*.pem
+*.token
+secrets.*
+credentials.*
+config.local.*
+
+# Logs
+*.log
+logs/
+
+# Large model and engine files
+*.pth
+*.pt
+*.onnx
+*.engine
+*.h5
+*.ckpt
+*.pb
+*.tflite
+*.weights
+
+# Datasets and generated outputs
+data/
+datasets/
+outputs/
+runs/
+checkpoints/
+weights/
+models/
+results/
+
+# Jupyter
+.ipynb_checkpoints/

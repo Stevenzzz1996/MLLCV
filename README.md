@@ -1,45 +1,123 @@
-# 时光留给我们和平和期待
+# MLLCV
 
-<img src="./timg.jpg" alt="timg" style="zoom:150%;" />
+MLLCV is an open-source computer vision learning and implementation repository for Chinese-speaking developers, students, and computer vision engineers.
 
-<FONT SIZE = 5 color = grenn>这个仓库是我的主要仓库，主要写一些计算机视觉的东西。</FONT>
+The goal of this project is to provide practical examples, study notes, and deployment-oriented workflows for common computer vision tasks, including object detection, face recognition, semantic segmentation, image classification, model compression, and deployment preparation.
 
-特别感谢：我的师弟伟业和映谦大佬YOLOV3-keras的工作！
+> Project status: MLLCV is an educational open-source repository under active cleanup and documentation improvement. It is not intended to be a production-ready framework.
 
-特别感谢：yangyun1994 YOLOV3-TF2.0的工作！
+## Why This Project Exists
 
----
+Computer vision learners often face a gap between theory, papers, and runnable engineering examples. MLLCV is designed to help beginners and junior engineers understand how common CV algorithms are implemented, organized, trained, and prepared for deployment.
 
-### 2020/7/27 14：37 
+This repository focuses on practical learning, code reading, and reproducible examples.
 
-颓废的七月即将过去、在实习公司已经过了大半的时光！
+## Main Topics
 
-YOLO部分的工作已经告一段落，后续一些精细化的东西会持续的更新
+- Object detection examples, including YOLO / Keras related implementations
+- Face recognition examples
+- Semantic segmentation workflows
+- ResNet and image classification learning materials
+- Model compression and deployment notes
+- Computer vision papers and study notes
+- OpenCV / Python-based CV utilities
 
-最近学习一些深度学习部署的东西，后续更新，请关注！
+## Repository Structure
 
----
+```text
+MLLCV/
+├── Computer_Vision/          # General computer vision examples and notes
+├── YOLO_keras/               # YOLO / Keras related examples
+├── paper/                    # Paper reading notes and references
+├── docs/                     # Project documentation
+├── scripts/                  # Lightweight repository maintenance scripts
+├── tests/                    # Lightweight repository health checks
+├── requirements.txt          # Basic Python dependencies
+├── SECURITY.md               # Security policy
+├── CONTRIBUTING.md           # Contribution guide
+├── CHANGELOG.md              # Release notes
+└── README_CN.md              # Chinese project overview
+```
 
-### 2020/8/10  9：16
+## Quick Start
 
-深度学习web端部署教程即将更新，一个后端+深度学习的开始~
+Clone the repository:
 
-如果有空可能会了解deepsort
+```bash
+git clone https://github.com/Stevenzzz1996/MLLCV.git
+cd MLLCV
+```
 
----
-### 2020/8/14  15：39
+Create a Python environment:
 
-人脸识别完成参见face_ID文件夹
-TODO:写成web端接口实现
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
 
----
+Install basic dependencies:
 
-### 2021/1/5
+```bash
+pip install -r requirements.txt
+```
 
-- 优化语义分割算法流程
+Different submodules may require different versions of TensorFlow, Keras, OpenCV, or other ML libraries. Please check the documentation inside each module before running examples.
 
-- 优化目标检测算法程序
+## Documentation
 
-- 模型压缩部署
+- [Quick Start](docs/quickstart.md)
+- [Project Overview](docs/project_overview.md)
+- [YOLO Demo Notes](docs/yolo_demo.md)
+- [Face Recognition Demo Notes](docs/face_recognition_demo.md)
+- [Semantic Segmentation Notes](docs/segmentation_demo.md)
+- [Deployment Notes](docs/deployment_notes.md)
+- [Model File Policy](docs/model_file_policy.md)
+- [Maintenance Plan](docs/maintenance_plan.md)
 
+## Project Status
 
+MLLCV is currently being reorganized into a more maintainable educational open-source project.
+
+Planned improvements include:
+
+- Cleaner bilingual documentation
+- Better quick-start tutorials
+- More reproducible examples
+- Dependency cleanup
+- Basic tests and smoke checks
+- Security review for file loading, model loading, and dependency risks
+- Release notes and maintenance workflow improvements
+
+## Roadmap
+
+- [ ] Improve bilingual documentation
+- [ ] Add runnable YOLO demo instructions
+- [ ] Add face recognition demo instructions
+- [ ] Add semantic segmentation tutorial
+- [ ] Add basic repository health checks
+- [ ] Review dependency and security risks
+- [ ] Add model deployment notes
+- [ ] Prepare v0.1.0 OSS cleanup release
+
+## Contributing
+
+Contributions are welcome. You can help by:
+
+- Improving documentation
+- Fixing broken examples
+- Adding reproducible tutorials
+- Reporting issues
+- Reviewing dependencies
+- Adding tests
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening issues or pull requests.
+
+## Security
+
+Please read [SECURITY.md](SECURITY.md) before reporting security-related issues.
+
+Do not submit API keys, tokens, private datasets, or sensitive model files in issues or pull requests.
+
+## License
+
+This project is released under the MIT License.
