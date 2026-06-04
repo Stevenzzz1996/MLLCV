@@ -36,18 +36,33 @@ config.local.*
 
 # Logs and runtime output
 *.log
+logs/
 runs/
 outputs/
 results/
+episodes/
 
 # Datasets, recordings, and generated experiment media
-data/
+/data/*
+!data/.gitkeep
 datasets/
 recordings/
 *.mp4
 *.avi
 *.mov
 *.mkv
+*.jpg
+*.jpeg
+*.png
+
+# But allow documentation assets if explicitly needed
+!docs/assets/*.png
+!docs/assets/*.jpg
+!docs/assets/*.jpeg
+
+# Vendored upstream tree currently contains a nested data helper directory that
+# was historically ignored by the repository-wide data rule.
+third_party/AsymTrack/lib/train/data/
 
 # Large model and engine files
 models/
@@ -57,11 +72,14 @@ checkpoints/
 *.pt
 *.onnx
 *.engine
+*.trt
 *.h5
 *.ckpt
 *.pb
 *.tflite
 *.weights
+*.npy
+*.npz
 
 # Jupyter
 .ipynb_checkpoints/

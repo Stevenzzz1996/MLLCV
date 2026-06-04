@@ -24,7 +24,12 @@ jobs:
         run: python scripts/validate_project_structure.py
 
       - name: Compile Python sources
-        run: python -m compileall main_low_latency_track.py modules scripts
+        run: python -m compileall main_low_latency_track.py modules scripts mllcv examples/vla_record_demo.py
 
       - name: Run import smoke checks
         run: python scripts/import_smoke_check.py
+
+      - name: Run mock VLA recording demo
+        run: |
+          python examples/vla_record_demo.py
+          python -m mllcv.vla.convert_to_lerobot --input data/mock_vla_episode/episode_mock_000001.jsonl

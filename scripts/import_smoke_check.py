@@ -13,6 +13,10 @@ MODULES = [
     "modules.dkf_filter",
     "modules.target_predictor",
     "modules.target_selector",
+    "mllcv.vla.schema",
+    "mllcv.vla.writer",
+    "mllcv.vla.recorder",
+    "mllcv.vla.convert_to_lerobot",
 ]
 
 
