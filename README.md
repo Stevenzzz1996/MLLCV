@@ -1,20 +1,58 @@
-# MLLCV: Low-Latency Computer Vision Tracking and Robotics Perception
+# MLLCV: Low-Latency Computer Vision Tracking, Data Recording, and VLA Training
 
-MLLCV is an open-source computer vision and robotics perception project focused on low-latency target detection, single-object tracking, Kalman-based prediction, and visual servo control.
+MLLCV is an open-source computer vision and robotic perception project focused on low-latency target detection, single-object tracking, Kalman-based prediction, visual servo control, and Vision-Language-Action data recording for gimbal-based systems.
 
 The current prototype demonstrates an end-to-end A8 Mini gimbal tracking pipeline:
 
 ```text
-LatestFrameRTSP -> YOLO detector -> AsymTrack tracker -> Kalman prediction -> VisualServo -> A8 Mini UDP speed control
+RTSP Camera
+    ↓
+LatestFrameRTSP
+    ↓
+YOLO Detector / Manual ROI
+    ↓
+AsymTrack Tracker
+    ↓
+Kalman Prediction
+    ↓
+VisualServo
+    ↓
+A8 Mini UDP Speed Control
 ```
 
-It is designed for robotics, UAV observation, surveillance, edge AI, and real-time computer vision developers who want to study a practical tracking-to-control pipeline rather than an isolated detector or tracker demo.
+The next stage extends this tracking system into a data-driven VLA workflow:
+
+```text
+Tracking System / Human Teleoperation
+    ↓
+Observation-Action Recorder
+    ↓
+Episode Dataset
+    ↓
+LeRobot-Compatible Conversion
+    ↓
+Policy Training
+    ↓
+Policy Inference for Gimbal Control
+```
+
+It is designed for robotics, UAV observation, surveillance, edge AI, and real-time computer vision developers who want to study a practical perception-to-control-to-data pipeline rather than an isolated detector or tracker demo.
 
 > Status: prototype. This repository is designed to help developers study and iterate on a real-time tracking control loop. It is not presented as a production-ready framework and does not claim broad adoption or benchmark leadership.
 
 ## Why This Project Matters
 
-Real-time visual tracking systems often fail for reasons that are not visible in isolated detector or tracker demos: stale RTSP frames, detector reacquisition delays, tracker drift, camera motion, control-loop latency, and hardware safety constraints. MLLCV is intended to make those integration points explicit so robotics and edge-AI developers can inspect, reproduce, and improve the full loop from video input to gimbal command output.
+Many computer vision projects stop at detection or tracking. Real robotic perception systems need a full loop: low-latency video input, perception, prediction, control, data recording, and policy learning.
+
+MLLCV aims to provide an educational and deployment-oriented open-source prototype for this full loop. It is especially useful for developers working on:
+
+- real-time computer vision
+- robotic perception
+- gimbal-based target tracking
+- low-latency RTSP pipelines
+- visual servo control
+- observation-action data recording
+- Vision-Language-Action and imitation learning preparation
 
 ## Key Features
 
@@ -25,6 +63,8 @@ Real-time visual tracking systems often fail for reasons that are not visible in
 - Visual-servo speed command generation with dead zones, smoothing, and command limits.
 - Siyi A8 Mini UDP packet support for speed, center, angle, and zoom commands.
 - Dry-run mode for software-only validation without sending hardware commands.
+- VLA episode schema and JSONL observation-action recorder for future policy learning.
+- LeRobot conversion validation stub for dataset preparation.
 - Lightweight CI checks suitable for external contributors without private model weights or hardware.
 
 ## System Architecture
@@ -64,6 +104,13 @@ python -m compileall main_low_latency_track.py modules scripts
 python scripts/validate_project_structure.py
 ```
 
+Run a mock VLA recording check without camera, model, RTSP stream, or gimbal hardware:
+
+```bash
+python examples/vla_record_demo.py
+python -m mllcv.vla.convert_to_lerobot --input data/mock_vla_episode/episode_mock_000001.jsonl
+```
+
 Run a software-only smoke command with detector loading disabled:
 
 ```bash
@@ -80,6 +127,7 @@ For local video and RTSP examples, see:
 
 - [Local Video Tracking Demo](examples/local_video_tracking_demo.md)
 - [RTSP Tracking Demo](examples/rtsp_tracking_demo.md)
+- [VLA Module](mllcv/vla/README.md)
 
 ## Configuration
 
@@ -94,6 +142,29 @@ The main runtime configuration is YAML-based. The most important sections are:
 - `runtime`: GUI, recording, console status, and dry-run behavior.
 
 The checked-in examples intentionally avoid private RTSP URLs and private model weights. Real deployments should keep hardware addresses, private stream URLs, and local model paths outside public commits.
+
+## VLA Roadmap
+
+MLLCV is being extended with a VLA data recording and training-preparation pipeline.
+
+The planned workflow is:
+
+1. Record synchronized camera frames, tracking states, gimbal telemetry, and expert actions.
+2. Store data as episode-based observation-action trajectories.
+3. Attach natural-language task instructions such as "keep the target centered" or "search for the target".
+4. Convert the dataset into a LeRobot-compatible format.
+5. Train a policy model using imitation learning or VLA-style policy learning.
+6. Deploy the policy back into the gimbal control loop with safety limits and dry-run validation.
+
+The first goal is not to train a large VLA model immediately. The first goal is to build a reliable data recording, schema, conversion, and evaluation pipeline.
+
+Related documents:
+
+- [VLA Roadmap](docs/vla_roadmap.md)
+- [Data Recording](docs/data_recording.md)
+- [VLA Dataset Format](docs/vla_dataset_format.md)
+- [LeRobot Integration Plan](docs/lerobot_integration.md)
+- [Safety and Privacy](docs/safety_and_privacy.md)
 
 ## Dry-Run Mode
 
@@ -141,4 +212,13 @@ The Siyi A8 Mini UDP support is based on the packet structure documented in this
 
 ## Safety
 
-Network video streams, UDP control packets, model files, and physical gimbals all have safety implications. Do not publish private stream URLs, credentials, private model weights, or sensitive recordings. Read [SECURITY.md](SECURITY.md) and [docs/a8-mini-control.md](docs/a8-mini-control.md) before connecting real hardware.
+Network video streams, UDP control packets, model files, physical gimbals, and recorded datasets all have safety implications. Do not publish private stream URLs, credentials, private model weights, or sensitive recordings. Read [SECURITY.md](SECURITY.md), [docs/a8-mini-control.md](docs/a8-mini-control.md), and [docs/safety_and_privacy.md](docs/safety_and_privacy.md) before connecting real hardware or publishing data.
+
+Please follow these rules:
+
+- Do not commit real surveillance videos, private faces, license plates, or sensitive scenes.
+- Do not commit API keys, RTSP credentials, device IP addresses, or private calibration files.
+- Do not commit large model weights directly to Git.
+- Use dry-run mode before sending real gimbal commands.
+- Keep yaw, pitch, and zoom commands bounded by safety limits.
+- Use synthetic, public, or anonymized data for examples.

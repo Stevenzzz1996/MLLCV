@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.2.0 - Planned VLA Data Recording Roadmap
+
+### Planned
+
+- Add VLA episode schema for observation-action trajectories.
+- Add JSONL writer and recorder utilities.
+- Add mock VLA recording demo without hardware.
+- Add LeRobot-compatible conversion validation stub.
+- Add VLA dataset format, data recording, safety/privacy, and LeRobot integration docs.
+- Add future smoke tests for generated VLA episodes.
+
 ## v0.1.0 - Low-Latency Tracking Prototype
 
 ### Added
