@@ -1,0 +1,2 @@
+segment_idx,start_frame,end_frame,rows,baseline_mean_px,pred_mean_px,gt_delay_mean_px,baseline_p95_px,pred_p95_px,mean_improvement_px,improved_ratio
+0,6,899,894,5.938863491125759,2.956413799078524,4.948005796919316,12.0145581025773,10.943692199177075,2.9824496920472354,0.8322147651006712

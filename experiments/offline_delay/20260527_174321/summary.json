@@ -1,0 +1,22 @@
+{
+  "video": "/home/mll/Desktop/VIDEOS/videos/output_new.mp4",
+  "detector": "/home/mll/CPP_PROJ/code_release/version_v7_weights/isr_v2_8l_20250304_ver7_960.onnx",
+  "delay_ms": 200.0,
+  "predict_ms": 0.0,
+  "fps": 29.504774672274394,
+  "rows": 178,
+  "valid_eval_rows": 62,
+  "lost_count": 0,
+  "detector_corrections": 57,
+  "template_refreshes": 56,
+  "ref_misses": 116,
+  "ref_switch_rejects": 90,
+  "allow_reference_reselect": false,
+  "max_ref_center_jump": 220.0,
+  "baseline_mean_px": 95.76626227046978,
+  "pred_mean_px": 97.92032793554917,
+  "baseline_p95_px": 220.7557981413581,
+  "pred_p95_px": 236.77113991080518,
+  "mean_improvement_px": -2.1540656650793606,
+  "improved_ratio": 0.3225806451612903
+}

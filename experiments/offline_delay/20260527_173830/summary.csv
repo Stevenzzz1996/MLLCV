@@ -1,0 +1,2 @@
+video,detector,delay_ms,predict_ms,fps,rows,valid_eval_rows,lost_count,detector_corrections,template_refreshes,baseline_mean_px,pred_mean_px,baseline_p95_px,pred_p95_px,mean_improvement_px,improved_ratio
+/home/mll/Desktop/VIDEOS/videos/output_new.mp4,/home/mll/CPP_PROJ/code_release/version_v7_weights/isr_v2_8l_20250304_ver7_960.onnx,200.0,160.0,29.504774672274394,178,178,0,57,56,144.19909490635544,146.20892432261851,519.7571359748908,534.9449238406486,-2.009829416263074,0.47191011235955055

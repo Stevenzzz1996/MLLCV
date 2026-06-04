@@ -1,5 +1,0 @@
-!.gitignore
-*.pyc
-*.pth
-facedb
-!resnet18_110.pth

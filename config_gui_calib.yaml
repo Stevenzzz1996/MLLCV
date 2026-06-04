@@ -1,0 +1,152 @@
+runtime:
+  dry_run_gimbal: true
+  show_gui: true
+  record_enable: false
+  console_status_sec: 1.0
+
+video:
+  source: "rtsp://192.168.144.25:8554/main.264"
+  rtsp_transport: "udp"
+  buffer_size: 1
+  reconnect_sec: 1.0
+  rotate: 0
+
+latency:
+  max_frame_age_ms: 150
+  drop_stale_frame: true
+
+yolo26:
+  enable: true
+  backend: "ultralytics"
+  model: "yolo26m.pt"
+  imgsz: 640
+  conf: 0.20
+  classes: [0]
+  detect_interval_idle: 3
+  detect_interval_track: 30
+  detect_interval_lost: 3
+
+asymtrack:
+  enable: true
+  backend: "pytorch"
+  model: "/home/mll/Downloads/AsymTrack_ep0500.pth.tar"
+  engine: "models/asymtrack/asymtrack_tiny_fp32.engine"
+  repo_root: "third_party/AsymTrack"
+  yaml_name: "tiny"
+  device: "cuda"
+  score_thr: 0.35
+  max_lost_count: 10
+
+prediction:
+  enable: true
+  mode: "dkf"
+  latency_est_ms: 200
+  history_sec: 2.0
+  predict_ms: 0
+  max_predict_ms: 80
+  max_kf_age_ms: 150
+  process_noise: 5000.0
+  measurement_noise: 25.0
+  init_pos_var: 100.0
+  init_vel_var: 10000.0
+  gate_px: 240
+  gate_mahalanobis: 16.0
+  reliable_sigma_px: 30
+  max_sigma_px: 80
+  yaw_px_per_cmd: 0.0
+  pitch_px_per_cmd: 0.0
+
+dkf:
+  enabled: true
+  ahead_time: 0.10
+  default_dt: 0.033
+  max_dt: 0.2
+  init_pos_var: 25.0
+  init_size_var: 25.0
+  init_vel_var: 100.0
+  init_size_vel_var: 25.0
+  process_noise: 5000.0
+  measurement_noise: 25.0
+  q_pos: 100.0
+  q_size: 10.0
+  q_vel: 5000.0
+  q_size_vel: 50.0
+  r_tracker_pos: 25.0
+  r_tracker_size: 50.0
+  r_detector_pos: 16.0
+  r_detector_size: 36.0
+  tracker_r_scale: 4.0
+  detector_r_scale: 2.0
+  gate_mahalanobis: 25.0
+  max_predict_lost_count: 3
+  lost_control_scale: 0.25
+  max_uncertainty_px: 80
+
+servo:
+  mode: "p"
+  kp_yaw: 45
+  kp_pitch: 34
+  kd_yaw: 0
+  kd_pitch: 0
+  deadzone_x: 0.03
+  deadzone_y: 0.03
+  smooth_alpha: 0.25
+  max_yaw_speed: 28
+  max_pitch_speed: 18
+  yaw_sign: 1
+  pitch_sign: 1
+
+target_selector:
+  min_area_ratio: 0.0015
+  max_area_ratio: 0.5
+  score_conf_weight: 0.45
+  score_pred_iou_weight: 0.35
+  score_center_weight: 0.10
+  score_area_weight: 0.10
+
+confirm:
+  confirm_frames: 3
+  iou_thr: 0.45
+  max_center_jump_ratio: 0.15
+  require_same_class: false
+
+gimbal:
+  ip: "192.168.144.25"
+  port: 37260
+  yaw_sign: 1
+  pitch_sign: -1
+  need_ack: false
+
+control:
+  command_hz: 25
+  manual_speed_yaw: 20
+  manual_speed_pitch: 14
+  stop_on_stale_frame: true
+  stop_on_tracker_lost: true
+  detector_correct_enable: true
+  detector_correct_interval: 10
+  detector_template_update_interval: 30
+  detector_reinit_iou: 0.15
+  detector_match_iou: 0.03
+  detector_max_center_dist: 0.35
+  detector_miss_limit: 8
+  max_detector_age_ms: 700
+  max_center_error: 0.85
+  lost_hold_ms: 500
+  min_target_area_ratio: 0.0015
+  min_target_box_width: 16
+  min_target_box_height: 32
+
+display:
+  fps_limit: 15
+  show_yolo: true
+  show_tracker: true
+  show_prediction: true
+  show_latency: true
+
+record:
+  enable: false
+  root: "recordings"
+  save_video: true
+  save_jsonl: true
+  queue_size: 120

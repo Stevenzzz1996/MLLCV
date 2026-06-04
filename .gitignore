@@ -34,11 +34,25 @@ secrets.*
 credentials.*
 config.local.*
 
-# Logs
+# Logs and runtime output
 *.log
-logs/
+runs/
+outputs/
+results/
+
+# Datasets, recordings, and generated experiment media
+data/
+datasets/
+recordings/
+*.mp4
+*.avi
+*.mov
+*.mkv
 
 # Large model and engine files
+models/
+weights/
+checkpoints/
 *.pth
 *.pt
 *.onnx
@@ -48,16 +62,6 @@ logs/
 *.pb
 *.tflite
 *.weights
-
-# Datasets and generated outputs
-data/
-datasets/
-outputs/
-runs/
-checkpoints/
-weights/
-models/
-results/
 
 # Jupyter
 .ipynb_checkpoints/

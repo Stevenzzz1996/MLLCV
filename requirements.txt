@@ -1,9 +1,4 @@
-numpy
-opencv-python
-matplotlib
-pillow
-scikit-image
-
-# Optional legacy ML dependencies:
-# tensorflow
-# keras
+opencv-contrib-python>=4.8
+numpy>=1.23
+PyYAML>=6.0
+ultralytics>=8.0

@@ -1,0 +1,15 @@
+[
+  {
+    "segment_idx": 0,
+    "start_frame": 6,
+    "end_frame": 899,
+    "rows": 894,
+    "baseline_mean_px": 10.948608659100419,
+    "pred_mean_px": 173.76428204170696,
+    "gt_delay_mean_px": 10.270658267214811,
+    "baseline_p95_px": 24.72288626606476,
+    "pred_p95_px": 523.2443403806953,
+    "mean_improvement_px": -162.81567338260652,
+    "improved_ratio": 0.33221476510067116
+  }
+]

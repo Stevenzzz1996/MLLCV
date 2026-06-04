@@ -1,123 +1,62 @@
-# MLLCV
+# A8 Mini Low-Latency Predictive Tracking Prototype
 
-MLLCV is an open-source computer vision learning and implementation repository for Chinese-speaking developers, students, and computer vision engineers.
-
-The goal of this project is to provide practical examples, study notes, and deployment-oriented workflows for common computer vision tasks, including object detection, face recognition, semantic segmentation, image classification, model compression, and deployment preparation.
-
-> Project status: MLLCV is an educational open-source repository under active cleanup and documentation improvement. It is not intended to be a production-ready framework.
-
-## Why This Project Exists
-
-Computer vision learners often face a gap between theory, papers, and runnable engineering examples. MLLCV is designed to help beginners and junior engineers understand how common CV algorithms are implemented, organized, trained, and prepared for deployment.
-
-This repository focuses on practical learning, code reading, and reproducible examples.
-
-## Main Topics
-
-- Object detection examples, including YOLO / Keras related implementations
-- Face recognition examples
-- Semantic segmentation workflows
-- ResNet and image classification learning materials
-- Model compression and deployment notes
-- Computer vision papers and study notes
-- OpenCV / Python-based CV utilities
-
-## Repository Structure
+This prototype wires the control loop described in the two design documents:
 
 ```text
-MLLCV/
-├── Computer_Vision/          # General computer vision examples and notes
-├── YOLO_keras/               # YOLO / Keras related examples
-├── paper/                    # Paper reading notes and references
-├── docs/                     # Project documentation
-├── scripts/                  # Lightweight repository maintenance scripts
-├── tests/                    # Lightweight repository health checks
-├── requirements.txt          # Basic Python dependencies
-├── SECURITY.md               # Security policy
-├── CONTRIBUTING.md           # Contribution guide
-├── CHANGELOG.md              # Release notes
-└── README_CN.md              # Chinese project overview
+LatestFrameRTSP -> YOLO detector -> AsymTrack -> Kalman prediction -> VisualServo -> A8 mini UDP speed control
 ```
 
-## Quick Start
+Default detection uses the open-source Ultralytics `yolo26m.pt` weight, which is downloaded automatically on first run when the installed Ultralytics version supports YOLO26. Replace it with a trained project weight later by editing `config_low_latency.yaml`.
 
-Clone the repository:
+## Install
+
+The current machine has a working conda environment named `calib` with Ultralytics and CUDA PyTorch:
 
 ```bash
-git clone https://github.com/Stevenzzz1996/MLLCV.git
-cd MLLCV
+conda activate calib
 ```
 
-Create a Python environment:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-Install basic dependencies:
+If you use another environment, install the Python dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Different submodules may require different versions of TensorFlow, Keras, OpenCV, or other ML libraries. Please check the documentation inside each module before running examples.
+## Run
 
-## Documentation
+Dry-run gimbal is enabled by default:
 
-- [Quick Start](docs/quickstart.md)
-- [Project Overview](docs/project_overview.md)
-- [YOLO Demo Notes](docs/yolo_demo.md)
-- [Face Recognition Demo Notes](docs/face_recognition_demo.md)
-- [Semantic Segmentation Notes](docs/segmentation_demo.md)
-- [Deployment Notes](docs/deployment_notes.md)
-- [Model File Policy](docs/model_file_policy.md)
-- [Maintenance Plan](docs/maintenance_plan.md)
+```bash
+python3 main_low_latency_track.py --config config_low_latency.yaml
+```
 
-## Project Status
+Skip detector loading while tuning RTSP latency, tracker, prediction, and gimbal control:
 
-MLLCV is currently being reorganized into a more maintainable educational open-source project.
+```bash
+python3 main_low_latency_track.py --config config_low_latency.yaml --dry-run-gimbal --no-yolo
+```
 
-Planned improvements include:
+Use TCP RTSP if UDP shows too many HEVC reference-frame warnings:
 
-- Cleaner bilingual documentation
-- Better quick-start tutorials
-- More reproducible examples
-- Dependency cleanup
-- Basic tests and smoke checks
-- Security review for file loading, model loading, and dependency risks
-- Release notes and maintenance workflow improvements
+```bash
+python3 main_low_latency_track.py --config config_low_latency.yaml --rtsp-transport tcp --dry-run-gimbal --no-yolo
+```
 
-## Roadmap
+Smoke test without a GUI:
 
-- [ ] Improve bilingual documentation
-- [ ] Add runnable YOLO demo instructions
-- [ ] Add face recognition demo instructions
-- [ ] Add semantic segmentation tutorial
-- [ ] Add basic repository health checks
-- [ ] Review dependency and security risks
-- [ ] Add model deployment notes
-- [ ] Prepare v0.1.0 OSS cleanup release
+```bash
+python3 main_low_latency_track.py --config config_low_latency.yaml --dry-run-gimbal --no-gui --no-yolo --max-frames 30
+```
 
-## Contributing
+Set `runtime.dry_run_gimbal: false` only after confirming yaw/pitch direction and stop behavior.
 
-Contributions are welcome. You can help by:
+## Controls
 
-- Improving documentation
-- Fixing broken examples
-- Adding reproducible tutorials
-- Reporting issues
-- Reviewing dependencies
-- Adding tests
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening issues or pull requests.
-
-## Security
-
-Please read [SECURITY.md](SECURITY.md) before reporting security-related issues.
-
-Do not submit API keys, tokens, private datasets, or sensitive model files in issues or pull requests.
-
-## License
-
-This project is released under the MIT License.
+`T`: auto-select target and enter auto tracking
+`I`: draw a manual ROI and initialize tracking without a detector
+`M`: manual tracking
+`W/A/S/D`: manual gimbal speed
+`C`: center gimbal
+`R`: reacquire
+`Space`: stop
+`ESC`: safe stop and exit
