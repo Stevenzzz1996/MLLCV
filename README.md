@@ -1,6 +1,14 @@
-# MLLCV Low-Latency Visual Tracking Prototype
+# MLLCV: Low-Latency Computer Vision Tracking and Robotics Perception
 
-MLLCV is an early-stage open-source prototype for low-latency visual tracking and predictive robotic gimbal control. It connects RTSP latest-frame capture, YOLO-style detector initialization and reacquisition, AsymTrack or OSTrack single-object tracking, delayed Kalman prediction, and Siyi A8 Mini UDP speed control for robotics, UAV observation, surveillance, edge AI, and real-time computer vision experiments.
+MLLCV is an open-source computer vision and robotics perception project focused on low-latency target detection, single-object tracking, Kalman-based prediction, and visual servo control.
+
+The current prototype demonstrates an end-to-end A8 Mini gimbal tracking pipeline:
+
+```text
+LatestFrameRTSP -> YOLO detector -> AsymTrack tracker -> Kalman prediction -> VisualServo -> A8 Mini UDP speed control
+```
+
+It is designed for robotics, UAV observation, surveillance, edge AI, and real-time computer vision developers who want to study a practical tracking-to-control pipeline rather than an isolated detector or tracker demo.
 
 > Status: prototype. This repository is designed to help developers study and iterate on a real-time tracking control loop. It is not presented as a production-ready framework and does not claim broad adoption or benchmark leadership.
 
@@ -22,22 +30,19 @@ Real-time visual tracking systems often fail for reasons that are not visible in
 ## System Architecture
 
 ```text
-RTSP / local video
-      |
-      v
-LatestFrameRTSP
-      |
-      v
-YOLO detector -----> target selection / reacquisition
-      |                         |
-      v                         v
-AsymTrack / OSTrack ------> Delayed Kalman filter
-      |                         |
-      v                         v
-predicted target center ---> VisualServo
-                                |
-                                v
-                    A8 Mini UDP speed control
+RTSP Camera / Local Video
+   ↓
+LatestFrameReader
+   ↓
+YOLO Detector / Manual ROI
+   ↓
+AsymTrack / OSTrack
+   ↓
+Kalman Prediction
+   ↓
+Visual Servo Controller
+   ↓
+A8 Mini UDP Gimbal Control
 ```
 
 The default control path is conservative: `runtime.dry_run_gimbal` is enabled in the sample configuration. Real UDP control requires an explicit `--real-gimbal` run and hardware-specific validation.
